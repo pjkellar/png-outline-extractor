@@ -5,3 +5,5 @@ output/**
 !output/.gitkeep
 
 .DS_STORE
+
+.idea
