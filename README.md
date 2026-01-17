@@ -82,3 +82,9 @@ docker run --rm \
 - Output is always PNG so transparency is preserved.
 - The script traverses folders recursively.
 - Output folder structure matches the input folder structure.
+
+## Example Before / After
+
+| Before | After |
+|-------:|:------|
+| ![Before](assets/cupcake.png) | ![After](assets/cupcake_Black.png) |
