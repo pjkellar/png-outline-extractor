@@ -33,23 +33,8 @@ You only need:
 No local Python install required.
 
 ---
-## 📁 Recommended repo structure
 
-```code
-png-outline-extractor/
-Dockerfile
-requirements.txt
-outline_only.py
-README.md
-input/
-.gitkeep
-output/
-.gitkeep
-```
-
----
-
-## 🚀 Build the Docker image
+## 🐳 Build the Docker image
 
 From the repo root:
 
@@ -57,11 +42,11 @@ From the repo root:
 docker build -t png-outline-extractor .
 ```
 
-▶️ Run it
+## ▶️ How to Run it
 
-Basic usage
+Basic usage:
 
-This will read PNGs from ./input and write to ./output:
+This will read PNGs from `./input` and write to `./output`:
 
 ```bash
 docker run --rm \
@@ -69,21 +54,21 @@ docker run --rm \
   -v "$(pwd)/output:/out" \
   png-outline-extractor --in /in --out /out
 ```
----
-🎭 Threshold Settings
 
-Outlines in images often aren’t pure black — they may contain dark grays due to anti-aliasing.
+Threshold Settings:
+
+Outlines in images often aren’t pure black, sometimes they may contain dark grays due to anti-aliasing, etc.
 
 Use `--threshold` to control how “dark” a pixel must be to count as outline.
   
-```code
---threshold 0 = only exact #000000
---threshold 40 = keeps most dark outlines
---threshold 60 = recommended for smoother outlines
---threshold 80 = more aggressive (keeps more dark pixels)
+```bash
+--threshold 0 # only exact #000000
+--threshold 40 # keeps most dark outlines
+--threshold 60 # recommended for smoother outlines
+--threshold 80 # more aggressive (keeps more dark pixels)
 ```
 
-Example:
+Example with threshold:
 ```bash
 docker run --rm \
   -v "$(pwd)/input:/in" \
@@ -92,13 +77,8 @@ docker run --rm \
 ```
 ---
 
-🧠 Notes
-  • Output is always PNG so transparency is preserved.
-  • The script traverses folders recursively.
-  • Output folder structure matches the input folder structure.
+## 🧠 Notes
 
----
-
-🏷️ Suggested GitHub Topics
-
-python docker png image-processing outline line-art pillow cli batch-processing transparency
+- Output is always PNG so transparency is preserved.
+- The script traverses folders recursively.
+- Output folder structure matches the input folder structure.
