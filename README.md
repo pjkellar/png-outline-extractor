@@ -1,8 +1,20 @@
-# PNG Outline Extractor
+<p align="center">
+  <img src="assets/logo.png" alt="PNG Outline Extractor logo" width="320" />
+</p>
 
-**PNG Outline Extractor** is a small Dockerized CLI tool that batch-processes PNG images and exports **outline-only** versions by removing color fills and keeping only the **black/dark line work**.
+<p align="center">
+  <a href="#"><img alt="Docker" src="https://img.shields.io/badge/Docker-ready-blue" /></a>
+  <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-3.12+-green" /></a>
+</p>
 
-Perfect for turning artwork into **line art**, **coloring-book style images**, or clean **stroke-only overlays**.
+<h1 align="center">PNG Outline Extractor</h1>
+
+<p align="center">
+  <strong>PNG Outline Extractor</strong> is a small Dockerized CLI tool that batch-processes PNG images and exports outline-only versions by removing color fills and keeping only the black/dark line work.
+</p>
+<p align="center">
+  Perfect for turning artwork into <strong>line art</strong>, <strong>coloring-book style images</strong>, or clean <strong>stroke-only overlays</strong>.
+</p>
 
 ---
 
