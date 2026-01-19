@@ -10,6 +10,6 @@ completed_input/**
 completed_output/**
 !completed_output/.gitkeep
 
-.DS_STORE
+**/.DS_STORE
 
-.idea
+/.idea/
