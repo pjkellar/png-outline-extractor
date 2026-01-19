@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY black_only.py .
+COPY png_outline_extractor.py .
 
-ENTRYPOINT ["python", "/app/black_only.py"]
+ENTRYPOINT ["python", "/app/png_outline_extractor.py"]
