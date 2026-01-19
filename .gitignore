@@ -4,6 +4,12 @@ input/**
 output/**
 !output/.gitkeep
 
+completed_input/**
+!completed_input/.gitkeep
+
+completed_output/**
+!completed_output/.gitkeep
+
 .DS_STORE
 
 .idea
